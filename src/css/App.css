@@ -1,0 +1,128 @@
+:root {
+    --color-1:      #cfe0fa;
+    --color-2: #2a1eda;
+  
+    --color-dark: #1f1e1f;
+    --text-color: #eaf8ff;
+}
+.opensans {
+    font-family: "Inter";
+    font-size: 1rem;
+}
+.title-header {
+    position: absolute;
+    bottom: 0;
+    font-size: 5vw;
+    font-weight: 700;
+    font-family: "Inter";
+    color: var(--color-2);
+}
+.content-header {
+    font-size: 5vw;
+    font-weight: 700;
+    font-family: "Inter";
+    color: var(--text-color);
+}
+.custom-navbar {
+    position: fixed;
+    font-family: "Inter";
+    max-width: 100%; 
+    width: 100%; 
+    margin: 0 auto; 
+    z-index: 2;
+}
+.framework-icon {
+    width: 100%;
+}  
+.framework-icon-container {
+    width: 20%;
+    max-width: 150px;
+    aspect-ratio: 2/2;
+}
+.framework-icon-title {
+    color: var(--text-color);
+    font-family: "Inter";
+}
+.expertise-text {
+    width: 50%;
+    min-width: 400px;
+    max-width: 800px;
+}
+.project-header-container {
+    width: 30%;
+    min-width: 400px;
+    max-width: 800px;
+}
+.project-card {
+    width: 30%;
+    min-width: 400px;
+    max-width: 800px;
+    transition: transform ease .2s;
+}
+.project-card:hover {
+    transform: scale(1.02);
+}
+.project-card-title {
+    font-family: "Inter";
+    font-size: 2rem;
+    font-weight: 600;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: black;
+    transition-timing-function: ease;
+    transform: translateX(-400px);
+    transition: transform 0.1s ease-in-out; 
+}
+.project-card-subtitle {
+    position: absolute;
+    font-family: "Inter";
+    text-align: end;
+    bottom: 50px;
+    color: black;
+    left: 0px;
+    transform: translateX(600px);
+    transition: transform 0.1s ease-in-out;
+}
+.project-card-hitbox {
+    position: relative; 
+    display: inline-block;
+    overflow: hidden;    
+}
+.project-card-hitbox .project-card-image {
+    max-width: 100%;
+    height: auto;
+}
+.project-card-hitbox:hover .project-card-title {
+    transform: translateX(0)
+    
+}
+.project-card-hitbox:hover .project-card-subtitle {
+    transform: translateX(0)
+    
+}
+
+.horizontal-line {
+    background-color: var(--text-color);
+    height: 5px;
+    opacity: 1.0;
+}
+.navbar-item {
+    font-size: 1.5rem;
+    color: var(--color-2);
+    font-weight: 600;
+}
+.top-container {
+    height: 100vh;
+    background-color: var(--color-1);
+}
+
+.content-container {
+    background-color: var(--color-dark);
+}
+
+p {
+    color: var(--text-color);
+    font-family: "Inter";
+    text-align: justify;
+  }

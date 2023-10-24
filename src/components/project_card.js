@@ -11,8 +11,8 @@ function ProjectCard(props) {
 
     
     return (
-      <div className='project-card'>
-        <Card className='m-4'>
+      <div className='project-card m-4 p-0'>
+        <Card className=''>
             <Card.Body className='p-0'>  
               <a className='project-card-hitbox'>
                   <img className='project-card-image' onClick={handleShow} src={props.src} alt="Image"/> 

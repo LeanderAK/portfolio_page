@@ -1,20 +1,33 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import { ParallaxProvider } from 'react-scroll-parallax';
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HomePage } from "./pages/homePage";
+import { ProjectPageBA } from "./pages/projectPageBA";
+import { ProjectPageBLUBBLE } from "./pages/projectPageBLUBBLE";
+import { ProjectPageCREAPE } from "./pages/projectPageCREAPE";
+import { ImprintPage } from "./pages/imprintPage";
+import { PrivacyPolicyPage } from "./pages/privacyPolicyPage";
+import { ParallaxProvider } from "react-scroll-parallax";
+
+export default function App() {
+  <link rel="stylesheet" href="./../src/index.css"></link>
+  return (
+    <ParallaxProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/">
+            <Route index element={<HomePage />}/>
+            <Route path="blubble" element={<ProjectPageBLUBBLE />}/>
+            <Route path="ba" element={<ProjectPageBA />}/>
+            <Route path="creape" element={<ProjectPageCREAPE />}/>
+
+            <Route path="imprint" element={<ImprintPage />}/>
+            <Route path="privacy" element={<PrivacyPolicyPage />}/>
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </ParallaxProvider>
+  );
+}
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <ParallaxProvider>
-      <App />
-    </ParallaxProvider>
-  </React.StrictMode>
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+root.render(<App />);

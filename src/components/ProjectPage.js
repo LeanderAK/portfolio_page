@@ -6,7 +6,7 @@ function ProjectPage(props) {
         <div className='project-page'>
           <Container fluid className="project-page-container">
             <Parallax translateY={[20,-20]}>
-              <span className="project-page-title">
+              <span className="project-page-title slide-in d-block">
                 {props.title}
               </span>
             </Parallax>
@@ -15,7 +15,7 @@ function ProjectPage(props) {
                 {props.subtitle}
               </span>
             </Parallax>
-            <div className="project-page-content-container pt-5">
+            <div className="project-page-overview-container pt-5">
               <div className="ps-3 w-50 project-page-frameworks">
                   {props.content}
               </div>
@@ -25,7 +25,10 @@ function ProjectPage(props) {
                   ))}
               </Parallax>
             </div>
-            <img className="project-page-image" src={props.src}></img>
+            <div className="project-page-content-container p-3 mt-5 mb-5">
+              <img className="project-page-image" src={props.src}></img>
+            </div>
+            <div className="p-5"/>
           </Container>
       </div>
       );

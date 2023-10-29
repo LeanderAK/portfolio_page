@@ -69,17 +69,6 @@
     font-size: var(--text-size-L);
     z-index: 3;
 }
-.framework-icon {
-    width: 100%;
-}  
-.framework-icon-container {
-    max-width: 150px;
-    aspect-ratio: 1/1;
-}
-.framework-icon-title {
-    color: var(--text-color);
-    font-family: "Inter";
-}
 .expertise-text {
     width: 50%;
     min-width: 400px;
@@ -138,6 +127,18 @@ footer {
 }
 .footer-item {
     width: 150px;
+}
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-200%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+}
+  
+.slide-in {
+    animation: slideInFromLeft 1.5s;
 }
 @media (max-width: 768px) {
     :root {

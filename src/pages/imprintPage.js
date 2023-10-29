@@ -1,3 +1,4 @@
+import FooterComponent from "../components/FooterComponent";
 import NavbarComponent from "../components/NavbarComponent";
 
 export const ImprintPage = () => {
@@ -5,6 +6,7 @@ export const ImprintPage = () => {
         <div>
             <NavbarComponent/>
             <h1>Imprint </h1>
+            <FooterComponent/>
         </div>
     );
 }

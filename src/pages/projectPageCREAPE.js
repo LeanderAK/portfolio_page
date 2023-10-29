@@ -1,3 +1,4 @@
+import FooterComponent from "../components/FooterComponent";
 import NavbarComponent from "../components/NavbarComponent";
 
 export const ProjectPageCREAPE = () => {
@@ -5,6 +6,7 @@ export const ProjectPageCREAPE = () => {
         <div>
             <NavbarComponent />
             <h1>Creape </h1>
+            <FooterComponent/>
         </div>
     );
 }

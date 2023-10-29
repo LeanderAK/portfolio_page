@@ -1,3 +1,4 @@
+import FooterComponent from "../components/FooterComponent";
 import NavbarComponent from "../components/NavbarComponent";
 
 export const ProjectPageBLUBBLE = () => {
@@ -5,6 +6,7 @@ export const ProjectPageBLUBBLE = () => {
         <div>
             <NavbarComponent />
             <h1>Blubble </h1>
+            <FooterComponent/>
         </div>
     );
 }

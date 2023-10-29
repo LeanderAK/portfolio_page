@@ -67,21 +67,39 @@
 }
 .project-page {
     background-color: var(--color-dark);
+    color: var(--text-color);
 }
 .project-page-container {
-    height: 100vh;
+    height: fit-content;
     padding-top: 20vh;
+    width: 60%;
+    min-width: 400px;
+    max-width: 1000px;
 }
 .project-page-title {
     font-size: var(--text-size-XL);
     font-weight: 700;
+    background-color: var(--color-2);
 }
 .project-page-subtitle {
     font-size: var(--text-size-L);
     font-weight: 600;
 }
 .project-page-content {
+    text-align: justify;
+    width: 50%;
+}
+.project-page-content-container {
     font-size: var(--text-size-M);
+    display: flex;
+    flex-direction: row;
+}
+.project-page-frameworks {
+    display: flex;
+    flex-direction: row;
+}
+.project-page-image {
+    max-height: 60%;
 }
 @media (max-width: 768px) {
     .project-card-title {

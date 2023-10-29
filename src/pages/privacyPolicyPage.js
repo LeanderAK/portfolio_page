@@ -1,3 +1,4 @@
+import FooterComponent from "../components/FooterComponent";
 import NavbarComponent from "../components/NavbarComponent";
 
 export const PrivacyPolicyPage = () => {
@@ -5,6 +6,7 @@ export const PrivacyPolicyPage = () => {
         <div>
             <NavbarComponent />
             <h1>PrivacyPolicy </h1>
+            <FooterComponent/>
         </div>
     );
 }

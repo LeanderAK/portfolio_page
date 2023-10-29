@@ -3,6 +3,7 @@ import './css/App.css';
 import './css/Timeline.css';
 import './css/Project.css';
 import './css/Navbar.css';
+import './css/Framework.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { HomePage } from "./pages/homePage";
 import { ProjectPageBA } from "./pages/projectPageBA";

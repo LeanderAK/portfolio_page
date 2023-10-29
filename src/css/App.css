@@ -44,34 +44,6 @@
     background-color: white;
     
 }
-.navbar-item {
-    font-size: var(--text-size-L);
-    cursor: pointer;
-    color: var(--color-2);
-    font-weight: 600;
-    position: relative;
-    text-decoration: none;
-    transition: all 0.3s ease;
-}
-.navbar-item::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: var(--color-2);
-    transform: scaleX(0);
-    transform-origin: bottom right;
-    transition: transform 0.4s ease-in-out;
-}
-.navbar-item:hover {
-    text-decoration: none;
-}
-.navbar-item:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-}
 .gif-real {
     position: absolute;
     right: 10%;
@@ -151,7 +123,7 @@
     background-color: var(--color-dark);
 }
 .color-2 {
-    color: var(--color-2);
+    color: var(--color-2) !important;
 }
 p {
     color: var(--text-color);
@@ -168,7 +140,6 @@ footer {
 .footer-item {
     width: 150px;
 }
-
 @media (max-width: 768px) {
     :root {
         --text-size-XXL: 3rem;

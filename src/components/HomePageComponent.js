@@ -4,7 +4,7 @@ import '../css/Project.css';
 import React, { useState, useEffect } from 'react';
 import { Navbar, Container, Row, Col } from 'react-bootstrap';
 import { Github, Linkedin, Lightbulb } from 'react-bootstrap-icons';
-import ProjectCard from './project_card';
+import ProjectCard from './ProjectCard';
 import { Parallax } from 'react-scroll-parallax';
 import TimelineItem from './TimelineItem';
 

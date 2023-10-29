@@ -1,16 +1,12 @@
-import '../css/App.css';
-import '../css/Timeline.css';
-import '../css/Project.css';
 import React, { useState, useEffect } from 'react';
-import { Navbar, Container, Row, Col } from 'react-bootstrap';
-import { Github, Linkedin, Lightbulb } from 'react-bootstrap-icons';
-import ProjectCard from '../components/project_card';
+import { Container, Row, Col } from 'react-bootstrap';
+import ProjectCard from '../components/ProjectCard';
 import { Parallax } from 'react-scroll-parallax';
 import TimelineItem from '../components/TimelineItem';
 import { Link } from 'react-router-dom';
+import NavbarComponent from '../components/NavbarComponent';
 
 export const HomePage = () => {
-    const [scrolledNavbar, setScrolledNavbar] = useState(false);
     const [scrolledProficiencies, setScrolledProficiencies] = useState(false);
     const [scrollY, setScrollY] = useState(0);
     const [iconSize, setIconSize] = useState(50);
@@ -18,13 +14,8 @@ export const HomePage = () => {
     const handleScroll = () => {
         let scroll = window.scrollY;
         setScrollY(scroll);
-        if (scroll > 0.2 * window.innerHeight) { 
-        setScrolledNavbar(true);
-        if(scroll > 0.5* window.innerHeight) {
+        if (scroll > 0.5 * window.innerHeight) { 
             setScrolledProficiencies(true);
-        }
-        } else{
-        setScrolledNavbar(false);
         }
     };
     const handleResize = () => {
@@ -42,24 +33,8 @@ export const HomePage = () => {
     }, []);
     return (
         <div className="App" data-target="#navbar">
-        <Navbar className={`custom-navbar ${scrolledNavbar ? 'custom-navbar-bg' : ''}`} id='navbar'>
-          <div className="d-flex justify-content-between w-100 p-4 pb-0 pt-0">
-            <div className="d-flex">
-              <span className='m-2 navbar-item'>EXPERTISE</span>
-              <span className='m-2 navbar-item'>PROJECTS</span>
-              <span className='m-2 navbar-item'>EXPERIENCE</span>
-            </div>
-            <div className='d-flex'>
-              <a href="https://github.com/LeanderAK" target='blank'>
-                <Github className="mt-1 ms-4 color-2" size={iconSize} />
-              </a>
-              <a href="https://www.linkedin.com/in/leander-kammermeier-b0b844212/" target='blank'>
-                <Linkedin className="mt-1 ms-4 color-2" size={iconSize} />
-              </a>
-            </div>
-          </div>
-        </Navbar>
         {/* Top Segment */}
+        <NavbarComponent scroll_visibility={true} />
         <Container fluid className="top-container">
             <div className='gif-container'>
               <Parallax className='gif-container-text' translateY={[-30, 30]}>              
@@ -123,24 +98,28 @@ export const HomePage = () => {
                   title="BACHELOR-THESIS"
                   subtitle="Visualization and analysis of DNS-, Shodan-, and Lighthouse-Datasets to assess the security of business's domains."
                   content="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur "
+                  link="ba"
               />
               <ProjectCard
                   src="./images/blubble_single.png"
                   title="BLUBBLE"
                   subtitle="A native Android & iOS App to find, create and organize book club meetups and discussions"
                   content="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur "
+                  link="blubble"
               />
               <ProjectCard
                   src=""
                   title="CREAPE"
                   subtitle="A Webapp for uploading, shareing and finding new DIY instructions"
                   content="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur "
+                  link="creape"
               />
               <ProjectCard
                   src=""
                   title="BACHELOR-THESIS"
                   subtitle="Visualization and analysis of DNS-, Shodan-, and Lighthouse-Datasets to assess the security of business's domains."
                   content="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur "
+                  link="ba"
               />
             </Row>
           </Parallax>
@@ -164,10 +143,10 @@ export const HomePage = () => {
         </Container>
         <footer className='text-center'>
           <span className='timeline-title p-1 footer-item m-3'>
-            <Link to="/imprint">Imprint</Link>
+            <Link to="/imprint" className='link'>Imprint</Link>
           </span>
-          <span className='timeline-title p-1 footer-item m-3'>
-            <Link to="/privacy">Privacy Policy</Link>
+          <span className='timeline-title p-1 footer-item m-3 '>
+            <Link to="/privacy" className='link'>Privacy Policy</Link>
           </span>
         </footer>
       </div>

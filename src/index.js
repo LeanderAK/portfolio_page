@@ -1,4 +1,8 @@
 import ReactDOM from "react-dom/client";
+import './css/App.css';
+import './css/Timeline.css';
+import './css/Project.css';
+import './css/Navbar.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { HomePage } from "./pages/homePage";
 import { ProjectPageBA } from "./pages/projectPageBA";

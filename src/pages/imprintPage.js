@@ -1,5 +1,10 @@
+import NavbarComponent from "../components/NavbarComponent";
+
 export const ImprintPage = () => {
     return (
-        <h1>Imprint </h1>
+        <div>
+            <NavbarComponent/>
+            <h1>Imprint </h1>
+        </div>
     );
 }

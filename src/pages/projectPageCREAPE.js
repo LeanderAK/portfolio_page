@@ -1,5 +1,10 @@
+import NavbarComponent from "../components/NavbarComponent";
+
 export const ProjectPageCREAPE = () => {
     return (
-        <h1>ProjectPageCREAPE </h1>
+        <div>
+            <NavbarComponent />
+            <h1>Creape </h1>
+        </div>
     );
 }

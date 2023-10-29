@@ -1,5 +1,10 @@
+import NavbarComponent from "../components/NavbarComponent";
+
 export const ProjectPageBLUBBLE = () => {
     return (
-        <h1>ProjectPageBLUBBLE </h1>
+        <div>
+            <NavbarComponent />
+            <h1>Blubble </h1>
+        </div>
     );
 }

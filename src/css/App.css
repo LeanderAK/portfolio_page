@@ -44,6 +44,15 @@
     background-color: white;
     
 }
+.scroll-indicator {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    color: var(--color-2);
+    animation: moveUpDown 2s ease-in-out infinite;
+}
 .gif-real {
     position: absolute;
     right: 10%;
@@ -136,7 +145,17 @@ footer {
       transform: translateX(0);
     }
 }
-  
+@keyframes moveUpDown {
+    0% {
+      transform: translateY(5px); /* Start at the current position */
+    }
+    50% {
+      transform: translateY(-5px); /* Move up 50px at 50% of the animation */
+    }
+    100% {
+      transform: translateY(5px); /* Return to the original position */
+    }
+}
 .slide-in {
     animation: slideInFromLeft 1.5s;
 }

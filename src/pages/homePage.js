@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Navbar } from 'react-bootstrap';
 import ProjectCard from '../components/ProjectCard';
 import { Parallax } from 'react-scroll-parallax';
 import TimelineItem from '../components/TimelineItem';
 import { Link } from 'react-router-dom';
 import NavbarComponent from '../components/NavbarComponent';
 import FooterComponent from '../components/FooterComponent';
+import { ChevronDown } from 'react-bootstrap-icons';
+import ScrollToFocus from '../components/ScrollToFocus';
 
 export const HomePage = () => {
     const [scrolledProficiencies, setScrolledProficiencies] = useState(false);
@@ -23,7 +25,6 @@ export const HomePage = () => {
         setIconSize(window.innerWidth < 768 ? 30 : 50);
         console.log(iconSize)
     } 
-
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);
         window.addEventListener('resize', handleResize);
@@ -32,6 +33,7 @@ export const HomePage = () => {
         window.removeEventListener('resize', handleResize);
         };
     }, []);
+
     return (
         <div className="App" data-target="#navbar">
         {/* Top Segment */}
@@ -50,11 +52,12 @@ export const HomePage = () => {
                 <img src='leander.gif'></img>
               </Parallax>
             </div>
-            <span className='title-header p-4'> 
-            <Parallax translateY={[0, 40]}>
-              LEANDER KAMMERMEIER
-            </Parallax>
-          </span>
+            <ScrollToFocus object_id="ProjectRef" yOffset={-450}/>
+            <span className='title-header p-4 mb-4'> 
+              <Parallax translateY={[0, 40]}>
+                LEANDER KAMMERMEIER
+              </Parallax>
+            </span>
         </Container>
         {/* Content Container */}
         <Container fluid className="content-container pt-4">
@@ -77,21 +80,13 @@ export const HomePage = () => {
               <div className='proficiency-item-container'>
                 <span className={`proficiency-item fade-in-left fade-obj-3 ${scrolledProficiencies ? 'fade-in-active' : ''}`}>DATASCIENCE</span>
               </div>
-              {/* <Parallax
-                translateX={['-1000px', '600px']}
-                easing="easeOutQuad"
-              >
-                <span className='content-subtitle'> 
-                  WEB / BACKEND / DATASCIENCE
-                </span>
-              </Parallax> */}
             </Row>
             <p className='expertise-text m-auto pt-4 pb-4 mb-4'>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur </p>
           </Parallax>
           <Parallax translateY={[30, -60]}>
             <Row className='justify-content-center m-4'>
-              <div className='project-header-container '>
-                <span className='content-header'> PROJECTS</span>
+              <div className='project-header-container'>
+                <span className='content-header' id="ProjectRef"> PROJECTS</span>
                 <p className=' mt-0'>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur </p>
               </div>
               <ProjectCard

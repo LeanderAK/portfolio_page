@@ -69,10 +69,14 @@
     background-color: var(--color-dark);
     color: var(--text-color);
 }
-.project-page-container {
-    height: fit-content;
+.project-page-top-container {
+    height: 100vh;
     padding-top: 20vh;
-    width: 60%;
+    min-width: 400px;
+    max-width: 1000px;
+}
+.project-page-bottom-container {
+    height: fit-content;
     min-width: 400px;
     max-width: 1000px;
 }
@@ -87,6 +91,8 @@
 .project-page-subtitle {
     font-size: var(--text-size-L);
     font-weight: 600;
+    text-align: justify;
+    
 }
 .project-page-content {
     text-align: justify;
@@ -99,7 +105,9 @@
 }
 .project-page-frameworks {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+  
 }
 .project-page-image {
     max-height: 60%;

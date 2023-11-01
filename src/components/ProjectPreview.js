@@ -1,9 +1,9 @@
 import { Container, Row } from "react-bootstrap";
 import FrameworkIcon from "./FrameworkIcon";
 import { Parallax } from "react-scroll-parallax";
-import { ChevronDown } from "react-bootstrap-icons";
+import { BoxArrowUpRight, ChevronDown, Github } from "react-bootstrap-icons";
 import ScrollToFocus from "./ScrollToFocus";
-function ProjectPage(props) {
+function ProjectPreview(props) {
     return (
         <div className='project-page'>
           <Container fluid className="project-page-top-container">
@@ -16,25 +16,30 @@ function ProjectPage(props) {
               {props.subtitle}
             </Parallax>
             <div className="project-page-overview-container pt-5">
-              <div className="w-50 project-page-frameworks">
-                  {props.content}
+              <div className="w-50 project-page-preview-container">
+                {props.content}
+                <br/>
               </div>
-              <Parallax translateY={[20,-20]} className="w-50 project-page-frameworks">
+              <Parallax translateY={[20,-20]} className="w-50 project-page-preview-container">
                     {props.frameworks.map((object, index) => (
                       <FrameworkIcon src={object.src} title={object.title} width={object.width}/>
                   ))}
               </Parallax>
             </div>
+            {props.link && (
+              <a href={props.link} target="blank">
+                <BoxArrowUpRight size={30} className="mt-4 color-2"/>
+              </a>
+            )}
+            {props.github && (
+              <a href={props.github} target="blank">
+                <Github size={30} className="mt-4 ms-4 color-2"/>
+              </a>
+            )}
             <ScrollToFocus object_id="scrollRef" yOffset={-200}/>
-          </Container>
-          <Container fluid className="project-page-bottom-container">
-            <div className="project-page-content-container p-3 mt-5 mb-5">
-              <img className="project-page-image" src={props.src} id="scrollRef"></img>
-            </div>
-            <div className="p-5"/>
           </Container>
       </div>
       );
   }
 
-  export default ProjectPage;
+  export default ProjectPreview;

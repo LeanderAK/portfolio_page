@@ -37,7 +37,7 @@
     max-width: 100%; 
     width: 100%; 
     margin: 0 auto; 
-    z-index: 2;
+    z-index: 5;
     transition: ease 0.5s;
 }
 .custom-navbar-bg {
@@ -52,6 +52,7 @@
     z-index: 1;
     color: var(--color-2);
     animation: moveUpDown 2s ease-in-out infinite;
+    cursor: pointer;
 }
 .gif-real {
     position: absolute;
@@ -121,6 +122,9 @@
 }
 .color-2 {
     color: var(--color-2) !important;
+}
+.color-dark {
+    color: var(--color-dark) !important;
 }
 p {
     color: var(--text-color);

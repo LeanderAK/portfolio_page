@@ -12,9 +12,9 @@ function ScrollToFocus(props) {
     };
     
     return (
-        <button onClick={scrollToElement}>
+        <a onClick={scrollToElement}>
             <ChevronDown className='scroll-indicator' size={40}/>
-        </button>
+        </a>
     )
 }
 export default ScrollToFocus;

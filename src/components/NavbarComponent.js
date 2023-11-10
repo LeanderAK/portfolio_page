@@ -2,6 +2,7 @@ import { Navbar} from 'react-bootstrap';
 import { useState, useEffect } from 'react';
 import { Github, Linkedin } from 'react-bootstrap-icons';
 import { Link } from 'react-router-dom';
+import CustomNavbarLink from './CustomNavbarLink';
 
 function NavbarComponent(props) {
     const [scrolledNavbar, setScrolledNavbar] = useState(true);
@@ -34,9 +35,15 @@ function NavbarComponent(props) {
         <Navbar className={`custom-navbar ${scrolledNavbar ? 'custom-navbar-bg' : ''}`} id='navbar'>
           <div className="d-flex justify-content-between w-100 p-4 pb-0 pt-0">
             <div className="d-flex">
-              <span className='m-2 navbar-item'><Link to="/" className='link color-2'>EXPERTISE</Link></span>
-              <span className='m-2 navbar-item'><Link to="/" className='link color-2'>PROJECTS</Link></span>
-              <span className='m-2 navbar-item'><Link to="/" className='link color-2'>EXPERIENCE</Link></span>
+              <CustomNavbarLink object_id="ProficienciesRef"> 
+                <span className='m-2 navbar-item'><Link to="/" className='link color-2'>PROFICIENCIES</Link></span>
+              </CustomNavbarLink>
+              <CustomNavbarLink object_id="ProjectRef"> 
+                <span className='m-2 navbar-item'><Link to="/" className='link color-2'>PROJECTS</Link></span>
+              </CustomNavbarLink>
+              <CustomNavbarLink object_id="ExperienceRef"> 
+                <span className='m-2 navbar-item'><Link to="/" className='link color-2'>EXPERIENCE</Link></span>
+              </CustomNavbarLink>
             </div>
             <div className='d-flex'>
               <a href="https://github.com/LeanderAK" target='blank'>

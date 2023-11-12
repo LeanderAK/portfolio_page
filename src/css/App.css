@@ -163,6 +163,13 @@ footer {
 .slide-in {
     animation: slideInFromLeft 1.5s;
 }
+@media (max-width: 2000px) {
+    :root {
+        --text-size-XXL: 4rem;
+        --text-size-XL: 3rem;
+        --text-size-L: 1.75rem;
+    }
+}
 @media (max-width: 768px) {
     :root {
         --text-size-XXL: 3rem;

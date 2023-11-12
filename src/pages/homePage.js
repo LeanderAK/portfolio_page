@@ -64,7 +64,7 @@ export const HomePage = () => {
           {/* Skills */}
           <Parallax translateY={[50, -20]}>
             <div className='text-center mt-4'>
-                <span className='content-header m-4 text-center'> 
+                <span className='content-header m-4 text-center' id="ProficienciesRef"> 
                     PROFICIENCIES 
                 </span> 
             </div>
@@ -90,7 +90,11 @@ export const HomePage = () => {
             <Row className='justify-content-center m-4'>
               <div className='project-header-container'>
                 <span className='content-header' id="ProjectRef"> PROJECTS</span>
-                <p className=' mt-0'>Here you can see the wide range of projects ive been able to work on over the past few years. These contain group- aswell as personal projects.</p>
+                <p className=' mt-0'>
+                  Here you can see the wide range of projects I had the chance to work on by myself or in a group over the last couple of years.
+                  These range from 3D renderings over web applications to data visualisation. All of these projects taught me new lessons and gave me 
+                  wide range of insights and experiences.     
+                </p>
               </div>
               <ProjectCard
                   src="./images/blubble_dual.png"
@@ -144,7 +148,7 @@ export const HomePage = () => {
           </Parallax>
           {/* Education & Experience */}
           <div className='text-center timeline-container'>
-            <span className='content-header text-center'> EDUCATION & EXPERIENCE </span>
+            <span className='content-header text-center' id="ExperienceRef"> EDUCATION & EXPERIENCE </span>
             <Parallax translateY={[40,-30]}>
               <Row className='timeline-row'>
                 <Col className='timeline-col'>

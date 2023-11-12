@@ -11,6 +11,9 @@ function ProjectCard(props) {
               <a className='project-card-hitbox' href={props.link}>
                   <span className='project-card-title p-3'>
                     {props.title}
+                    <span className='timeline-subtitle'>
+                      //{props.date}
+                    </span>
                   </span>
                   <span className='project-card-subtitle p-3'>
                     {props.subtitle}

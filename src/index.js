@@ -4,7 +4,7 @@ import './css/Timeline.css';
 import './css/Project.css';
 import './css/Navbar.css';
 import './css/Framework.css';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import { HomePage } from "./pages/homePage";
 import { ProjectPageBA } from "./pages/projectPageBA";
 import { ProjectPageBLUBBLE } from "./pages/projectPageBLUBBLE";
@@ -17,7 +17,7 @@ export default function App() {
   <link rel="stylesheet" href="./../src/index.css"></link>
   return (
     <ParallaxProvider>
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path="/">
             <Route index element={<HomePage />}/>
@@ -29,7 +29,7 @@ export default function App() {
             <Route path="privacy" element={<PrivacyPolicyPage />}/>
           </Route>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </ParallaxProvider>
   );
 }

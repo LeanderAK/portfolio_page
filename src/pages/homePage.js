@@ -81,41 +81,64 @@ export const HomePage = () => {
                 <span className={`proficiency-item fade-in-left fade-obj-3 ${scrolledProficiencies ? 'fade-in-active' : ''}`}>DATASCIENCE</span>
               </div>
             </Row>
-            <p className='expertise-text m-auto pt-4 pb-4 mb-4'>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur </p>
+            <p className='expertise-text m-auto pt-4 pb-4 mb-4'>
+              Im A International Media Informatics Student at the HTW University of applied sciences Berlin with a specialization in web development. In addition I work part time at [j]karef where I work on full Stack development of Data analysis tools.
+              Through my studies and past employments ive been able to build a wide range of proficiencies ranging from Full Stack development to 3D Modelling. 
+            </p>
           </Parallax>
           <Parallax translateY={[30, -60]}>
             <Row className='justify-content-center m-4'>
               <div className='project-header-container'>
                 <span className='content-header' id="ProjectRef"> PROJECTS</span>
-                <p className=' mt-0'>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur </p>
+                <p className=' mt-0'>Here you can see the wide range of projects ive been able to work on over the past few years. These contain group- aswell as personal projects.</p>
               </div>
               <ProjectCard
-                  src="./images/blubble_single.png"
+                  src="./images/blubble_dual.png"
+                  date="2023"
                   title="BACHELOR-THESIS"
                   subtitle="Visualization and analysis of DNS-, Shodan-, and Lighthouse-Datasets to assess the security of business's domains."
                   content="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur "
-                  link="ba"
+                  link="#/ba"
               />
               <ProjectCard
-                  src="./images/blubble_single.png"
+                  src="./images/blubble_dual.png"
+                  date="2023"
                   title="BLUBBLE"
                   subtitle="A native Android & iOS App to find, create and organize book club meetups and discussions"
                   content="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur "
-                  link="blubble"
+                  link="#/blubble"
               />
               <ProjectCard
                   src=""
+                  date="2023"
                   title="CREAPE"
                   subtitle="A Webapp for uploading, shareing and finding new DIY instructions"
                   content="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur "
-                  link="creape"
+                  link="#/creape"
               />
               <ProjectCard
-                  src=""
-                  title="BACHELOR-THESIS"
-                  subtitle="Visualization and analysis of DNS-, Shodan-, and Lighthouse-Datasets to assess the security of business's domains."
+                  src="./images/simple_shrine_thumbnail.png"
+                  date="2020"
+                  title="SIMPLE SHRINE PACK"
+                  subtitle="Low Poly 3D Assetpack available on the unity asset store"
                   content="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur "
-                  link="ba"
+                  link="#/ba"
+              />
+              <ProjectCard
+                  src="./images/simple_shrine_thumbnail.png"
+                  date="2020"
+                  title="VR DEMO GAME"
+                  subtitle="University entrance test"
+                  content="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur "
+                  link="#/ba"
+              />
+              <ProjectCard
+                  src="./images/simple_shrine_thumbnail.png"
+                  date="2020"
+                  title="FIVERR 3D MODELLING"
+                  subtitle="Freelance 3d modelling"
+                  content="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur "
+                  link="#/ba"
               />
             </Row>
           </Parallax>

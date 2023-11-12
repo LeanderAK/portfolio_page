@@ -14,9 +14,9 @@ export const ProjectPageBLUBBLE = () => {
         <div>
             <NavbarComponent />
             <ProjectPreview 
-                title="BLUBBLE"
+                title="BLUBBLE - Studentproject"
                 src="./images/blubble_single.png"
-                subtitle="Book Reading Club Application Studentproject"
+                subtitle="Reading Club Application for planning and hosting discussions Studentproject"
                 content="Blubble is a book club application that is designed to help book lovers structure and plan their discussions like never before. With Blubble, we have created an innovative tool that offers a wide range of features to make book club discussions more engaging, organized, and productive. "
                 github="https://github.com/orgs/Diva-E-HTW-BookClub/repositories"
                 link="https://showtime.f4.htw-berlin.de/ws22/bachelor/b6-book-reading-club-applikation/"

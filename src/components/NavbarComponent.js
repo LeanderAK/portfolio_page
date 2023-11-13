@@ -36,13 +36,13 @@ function NavbarComponent(props) {
           <div className="d-flex justify-content-between w-100 p-4 pb-0 pt-0">
             <div className="d-flex">
               <CustomNavbarLink object_id="ProficienciesRef"> 
-                <span className='m-2 navbar-item'><Link to="/" className='link color-2'>PROFICIENCIES</Link></span>
+                <span className='m-2 navbar-item'>PROFICIENCIES</span>
               </CustomNavbarLink>
               <CustomNavbarLink object_id="ProjectRef"> 
-                <span className='m-2 navbar-item'><Link to="/" className='link color-2'>PROJECTS</Link></span>
+                <span className='m-2 navbar-item'>PROJECTS</span>
               </CustomNavbarLink>
               <CustomNavbarLink object_id="ExperienceRef"> 
-                <span className='m-2 navbar-item'><Link to="/" className='link color-2'>EXPERIENCE</Link></span>
+                <span className='m-2 navbar-item'>EXPERIENCE</span>
               </CustomNavbarLink>
             </div>
             <div className='d-flex'>

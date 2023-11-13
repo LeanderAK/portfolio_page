@@ -1,10 +1,14 @@
+import { useEffect } from "react";
 import { ChevronDown } from "react-bootstrap-icons";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 function CustomNavbarLink(props) {
     const location = useLocation();
-    console.log(location.pathname);
+    const navigate = useNavigate();
 
     const focusOnElement = () => {
+        if(location.pathname !== "/") {
+            navigate("/")
+        }
         const identifier = props.object_id;
         const element = document.getElementById(identifier);
         if (element) {

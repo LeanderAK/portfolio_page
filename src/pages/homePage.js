@@ -8,6 +8,7 @@ import NavbarComponent from '../components/NavbarComponent';
 import FooterComponent from '../components/FooterComponent';
 import { ChevronDown } from 'react-bootstrap-icons';
 import ScrollToFocus from '../components/ScrollToFocus';
+import ScrollToTop from '../components/ScrollToTop';
 
 export const HomePage = () => {
     const [scrolledProficiencies, setScrolledProficiencies] = useState(false);
@@ -38,6 +39,7 @@ export const HomePage = () => {
         <div className="App" data-target="#navbar">
         {/* Top Segment */}
         <NavbarComponent scroll_visibility={true} />
+        <ScrollToTop />
         <Container fluid className="top-container">
             <div className='gif-container'>
               <Parallax className='gif-container-text' translateY={[-30, 30]}>              

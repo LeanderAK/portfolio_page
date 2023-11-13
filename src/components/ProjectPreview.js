@@ -22,7 +22,7 @@ function ProjectPreview(props) {
               </div>
               <Parallax translateY={[20,-20]} className="w-50 project-page-preview-container">
                     {props.frameworks.map((object, index) => (
-                      <FrameworkIcon src={object.src} title={object.title} width={object.width}/>
+                      <FrameworkIcon key={object.key} src={object.src} title={object.title} width={object.width}/>
                   ))}
               </Parallax>
             </div>

@@ -3,16 +3,18 @@ import NavbarComponent from "../components/NavbarComponent";
 import FrameworkIcon from "../components/FrameworkIcon";
 import ProjectPreview from "../components/ProjectPreview";
 import { Container } from "react-bootstrap";
+import ScrollToTop from '../components/ScrollToTop';
 
 const frameworks_list = [
-    {src : './icons/blender_icon.png', title : 'Blender', width : '50px'},
-    {src : './icons/blender_icon.png', title : 'Blender', width : '50px'},
-    {src : './icons/blender_icon.png', title : 'Blender', width : '50px'}
+    {src : './icons/blender_icon.png', title : 'Blender', width : '50px', key:1},
+    {src : './icons/blender_icon.png', title : 'Blender', width : '50px', key:2},
+    {src : './icons/blender_icon.png', title : 'Blender', width : '50px', key:3}
 ]
 export const ProjectPageBA = () => {
     return (
         <div>
             <NavbarComponent />
+            <ScrollToTop />
             <ProjectPreview 
                 title="BACHELOR THESIS"
                 src="./images/blubble_single.png"

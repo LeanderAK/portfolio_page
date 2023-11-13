@@ -2,17 +2,19 @@ import { Container } from "react-bootstrap";
 import FooterComponent from "../components/FooterComponent";
 import NavbarComponent from "../components/NavbarComponent";
 import ProjectPreview from "../components/ProjectPreview";
+import ScrollToTop from '../components/ScrollToTop';
 
 const frameworks_list = [
-    {src : './icons/ionic_icon.png', title : 'Ionic', width : '50px'},
-    {src : './icons/react_icon.png', title : 'React', width : '50px'},
-    {src : './icons/firebase_icon.png', title : 'Firebase', width : '50px'}
+    {src : './icons/ionic_icon.png', title : 'Ionic', width : '50px', key: 0},
+    {src : './icons/react_icon.png', title : 'React', width : '50px', key: 1},
+    {src : './icons/firebase_icon.png', title : 'Firebase', width : '50px', key: 2}
 ]
 
 export const ProjectPageBLUBBLE = () => {
     return (
         <div>
             <NavbarComponent />
+            <ScrollToTop />
             <ProjectPreview 
                 title="BLUBBLE - Studentproject"
                 src="./images/blubble_single.png"

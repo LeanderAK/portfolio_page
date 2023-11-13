@@ -12,6 +12,7 @@ import { ProjectPageCREAPE } from "./pages/projectPageCREAPE";
 import { ImprintPage } from "./pages/imprintPage";
 import { PrivacyPolicyPage } from "./pages/privacyPolicyPage";
 import { ParallaxProvider } from "react-scroll-parallax";
+import ScrollToTop from "./components/ScrollToTop";
 
 export default function App() {
   <link rel="stylesheet" href="./../src/index.css"></link>

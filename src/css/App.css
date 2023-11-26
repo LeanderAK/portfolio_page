@@ -25,6 +25,11 @@
     font-family: "Inter";
     color: var(--color-2);
 }
+.imprint {
+    padding-top: 15vh;
+    padding-left: 5%;
+    padding-right:5%;
+}
 .content-header {
     font-size: var(--text-size-XXL);
     font-weight: 700;

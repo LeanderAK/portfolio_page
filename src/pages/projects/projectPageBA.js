@@ -1,9 +1,7 @@
-import FooterComponent from "../components/FooterComponent";
-import NavbarComponent from "../components/NavbarComponent";
-import FrameworkIcon from "../components/FrameworkIcon";
-import ProjectPreview from "../components/ProjectPreview";
-import { Container } from "react-bootstrap";
-import ScrollToTop from '../components/ScrollToTop';
+import FooterComponent from "../../components/FooterComponent";
+import NavbarComponent from "../../components/NavbarComponent";
+import ProjectPreview from "../../components/ProjectPreview";
+import ScrollToTop from '../../components/ScrollToTop';
 
 const frameworks_list = [
     {src : './icons/blender_icon.png', title : 'Blender', width : '50px', key:1},

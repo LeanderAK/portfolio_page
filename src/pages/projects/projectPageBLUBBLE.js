@@ -1,8 +1,8 @@
 import { Container } from "react-bootstrap";
-import FooterComponent from "../components/FooterComponent";
-import NavbarComponent from "../components/NavbarComponent";
-import ProjectPreview from "../components/ProjectPreview";
-import ScrollToTop from '../components/ScrollToTop';
+import FooterComponent from "../../components/FooterComponent";
+import NavbarComponent from "../../components/NavbarComponent";
+import ProjectPreview from "../../components/ProjectPreview";
+import ScrollToTop from '../../components/ScrollToTop';
 
 const frameworks_list = [
     {src : './icons/ionic_icon.png', title : 'Ionic', width : '50px', key: 0},

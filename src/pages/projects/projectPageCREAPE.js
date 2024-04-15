@@ -1,6 +1,6 @@
-import FooterComponent from "../components/FooterComponent";
-import NavbarComponent from "../components/NavbarComponent";
-import ScrollToTop from '../components/ScrollToTop';
+import FooterComponent from "../../components/FooterComponent";
+import NavbarComponent from "../../components/NavbarComponent";
+import ScrollToTop from '../../components/ScrollToTop';
 
 export const ProjectPageCREAPE = () => {
     return (

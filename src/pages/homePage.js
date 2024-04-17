@@ -46,13 +46,15 @@ export const HomePage = () => {
             <div className='gif-container'>
               <Parallax className='gif-container-text' translateY={[-30, 30]}>              
                 <p className='color-2'>
-                  Media Informatics M.Sc @ TU Berlin <br />
-                  Working Student @ [j]karef <br/>
+                  Master Student in Digital Media and Technology <br />
+                  @ TU, FU & HU Berlin <br />
+                  Working Student <br/>
+                  @ [j]karef
                 </p>
               </Parallax>
-              <img className='gif-abstract' src='leander_abstract.gif'></img>
+              <img className='gif-abstract' src='/leander_abstract.gif'></img>
               <Parallax className='gif-real' translateY={[20, -20]}>
-                <img src='leander.gif'></img>
+                <img src='/leander.gif'></img>
               </Parallax>
             </div>
             <ScrollToFocus object_id="ProjectRef" yOffset={-450}/>
@@ -89,7 +91,7 @@ export const HomePage = () => {
                 <ProjectsText></ProjectsText>
               </div>
               <ProjectCard
-                  src="./images/blubble_dual.png"
+                  src="./images/ba_cover.png"
                   date="2023"
                   title="BACHELOR-THESIS"
                   subtitle="Visualization, analysis and improvement of DNS- and Shodan-Datasets to assess the security of business domains."
@@ -103,38 +105,6 @@ export const HomePage = () => {
                   subtitle="A native Android & iOS App to find, create and organize book club meetups and discussions"
                   content="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur "
                   link="blubble"
-              />
-              <ProjectCard
-                  src=""
-                  date="2023"
-                  title="CREAPE"
-                  subtitle="A Webapp for uploading, shareing and finding new DIY instructions"
-                  content="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur "
-                  link="creape"
-              />
-              <ProjectCard
-                  src="./images/simple_shrine_thumbnail.png"
-                  date="2020"
-                  title="SIMPLE SHRINE PACK"
-                  subtitle="Low Poly 3D Assetpack available on the unity asset store"
-                  content="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur "
-                  link="simple_shrine_pack"
-              />
-              <ProjectCard
-                  src="./images/simple_shrine_thumbnail.png"
-                  date="2020"
-                  title="VR DEMO GAME"
-                  subtitle="University entrance test"
-                  content="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur "
-                  link="vr_demo_game"
-              />
-              <ProjectCard
-                  src="./images/simple_shrine_thumbnail.png"
-                  date="2020"
-                  title="FIVERR 3D MODELLING"
-                  subtitle="Freelance 3d modelling"
-                  content="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur "
-                  link="fiverr"
               />
             </Row>
           </Parallax>

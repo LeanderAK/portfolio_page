@@ -22,8 +22,7 @@ export const ImprintPage = () => {
                         10715 Berlin<br />
                     </div>
                     <div className="pt-2">
-                        Telephone: 01234-789456<br />
-                        E-Mail: max@muster.de<br />
+                        E-Mail: leander.kammermeier@gmail.com<br />
                     </div>
                 </Col>
                 <h2 className="color-2 pt-2">

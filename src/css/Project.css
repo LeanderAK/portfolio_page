@@ -84,9 +84,8 @@
 .project-page-content-container {
     height: fit-content;
     min-width: 400px;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: auto;
-    background-color: var(--color-1);
 }
 .project-page-title {
     font-size: var(--text-size-XL);
@@ -114,11 +113,12 @@
 .project-page-preview-container {
     display: flex;
     flex-direction: row-reverse;
-    align-items: flex-end;
+    align-items: last baseline;
   
 }
 .project-page-image {
     max-height: 60%;
+    max-width:100%;
 }
 @media (max-width: 768px) {
     .project-card-title {

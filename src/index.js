@@ -8,7 +8,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { HomePage } from "./pages/homePage";
 import { ProjectPageBA } from "./pages/projects/projectPageBA";
 import { ProjectPageBLUBBLE } from "./pages/projects/projectPageBLUBBLE";
-import { ProjectPageCREAPE } from "./pages/projects/projectPageCREAPE";
 import { ImprintPage } from "./pages/imprintPage";
 import { PrivacyPolicyPage } from "./pages/privacyPolicyPage";
 import { ParallaxProvider } from "react-scroll-parallax";
@@ -24,7 +23,6 @@ export default function App() {
         <Route index element={<HomePage />} />
         <Route path="bachelor_thesis" element={<ProjectPageBA />} />
         <Route path="blubble" element={<ProjectPageBLUBBLE />} />
-        <Route path="creape" element={<ProjectPageCREAPE />} />
         <Route path="imprint" element={<ImprintPage />} />
         <Route path="privacy" element={<PrivacyPolicyPage />} />
         <Route path="*" element={<NoPage />} />

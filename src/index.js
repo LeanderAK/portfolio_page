@@ -18,7 +18,7 @@ export default function App() {
   <link rel="stylesheet" href="./../src/index.css"></link>
   return (
     <ParallaxProvider>
-      <BrowserRouter>
+      <BrowserRouter basename={`/${process.env.PUBLIC_URL}`}>
       <Routes>
         <Route index element={<HomePage />} />
         <Route path="bachelor_thesis" element={<ProjectPageBA />} />

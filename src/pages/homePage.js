@@ -46,8 +46,8 @@ export const HomePage = () => {
             <div className='gif-container'>
               <Parallax className='gif-container-text' translateY={[-30, 30]}>              
                 <p className='color-2'>
-                  Master Student in Digital Media and Technology <br />
-                  @ TU, FU & HU Berlin <br />
+                  Master Student in Information Systems <br />
+                  @ Free University Berlin <br />
                   Working Student <br/>
                   @ [j]karef
                 </p>
@@ -90,22 +90,24 @@ export const HomePage = () => {
                 <span className='content-header' id="ProjectRef"> PROJECTS</span>
                 <ProjectsText></ProjectsText>
               </div>
-              <ProjectCard
-                  src="./images/ba_cover.png"
-                  date="2023"
-                  title="BACHELOR-THESIS"
-                  subtitle="Visualization, analysis and improvement of DNS- and Shodan-Datasets to assess the security of business domains."
-                  content="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur "
-                  link="bachelor_thesis"
-              />
-              <ProjectCard
-                  src="./images/blubble_dual.png"
-                  date="2023"
-                  title="BLUBBLE"
-                  subtitle="A native Android & iOS App to find, create and organize book club meetups and discussions"
-                  content="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur "
-                  link="blubble"
-              />
+              <Link className='project-card m-4 p-0' to="/bachelor_thesis">
+                <ProjectCard
+                    src="./images/ba_cover.png"
+                    date="2023"
+                    title="BACHELOR-THESIS"
+                    subtitle="Visualization, analysis and improvement of DNS- and Shodan-Datasets to assess the security of business domains."
+                    content="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur "
+                />
+              </Link>
+              <Link className='project-card m-4 p-0' to="/bachelor_thesis">
+                <ProjectCard
+                    src="./images/blubble_dual.png"
+                    date="2023"
+                    title="BLUBBLE"
+                    subtitle="A native Android & iOS App to find, create and organize book club meetups and discussions"
+                    content="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur "
+                />
+              </Link>
             </Row>
           </Parallax>
           {/* Education & Experience */}
@@ -114,7 +116,7 @@ export const HomePage = () => {
             <Parallax translateY={[40,-30]}>
               <Row className='timeline-row'>
                 <Col className='timeline-col'>
-                  <TimelineItem classes="text-end" date='April 2024 - Present' title='TU, FU & HU BERLIN' subtitle='M.Sc' description='M.Sc in Digital Media and Technology with focus on media economics, datascience and media- systems and networks'/>
+                  <TimelineItem classes="text-end" date='April 2024 - Present' title='FREE UNIVERSITY BERLIN' subtitle='M.Sc' description='M.Sc in Information Systems and Technology with focus on data driven businessmodels and entrepeneurship'/>
                   <TimelineItem classes="text-end" date='Oktober 2020 - March 2024' title='HTW BERLIN' subtitle='B.Sc' description='B.Sc in International Media Informatics with a final grade of 1.76 and a self elected focus on web development'/>
                   <TimelineItem classes="text-end" date='June 2011 to June 2019' title='FSAS Berlin' subtitle='Bilingual Highschool' description='Abitur (University entrance diploma) with an average grade of 1.9 with Art and English as main courses'/>
                 </Col>

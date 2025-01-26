@@ -53,9 +53,6 @@ export const HomePage = () => {
                 </p>
               </Parallax>
               <img className='gif-abstract' src='/leander_abstract.gif'></img>
-              <Parallax className='gif-real' translateY={[20, -20]}>
-                <img src='/leander.gif'></img>
-              </Parallax>
             </div>
             <ScrollToFocus object_id="ProjectRef" yOffset={-450}/>
             <span className='title-header p-4 mb-4'> 
